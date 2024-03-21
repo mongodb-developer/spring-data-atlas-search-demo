@@ -33,3 +33,7 @@ way to do so is navigating to your cluster on atlas, clicking on the "Atlas Sear
 6. Run the application (com.mongodb.demo.AtlasSpringApplication)
 7. You can now access the application at http://localhost:8080. You can import
 `postman_collection.json` for some example requests.
+
+## Note on the mock data
+Any resemblance to real persons or companies is purely coincidental. The data was generated
+using the FakerJS library and is not real.
