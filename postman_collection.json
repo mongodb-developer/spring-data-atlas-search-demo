@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "a9a0b2b8-8949-4095-9dbe-e6d7434a59b7",
+		"name": "Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "753234"
+	},
+	"item": [
+		{
+			"name": "AggregateByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/users/aggregated/byCity",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"users",
+						"aggregated",
+						"byCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/users/byName?name=Samuel Williamson",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"users",
+						"byName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Samuel Williamson"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/users/search?query=sam* *son",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "sam* *son"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchAddress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/addresses/search?query=bryan",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"addresses",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "bryan"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "8080",
+			"type": "string"
+		}
+	]
+}
